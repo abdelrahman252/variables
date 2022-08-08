@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif, tahoma;
+}
+html{
+    scroll-behavior:smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    font-family: Din-Light, Arial, sans-serif;
+    line-height: 1.45;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-variant-ligatures: none;
+}
+
+nav {
+    background: #0F0F0F;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    word-spacing: 7em;
+    padding: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3AA687;
+    font-size: 20px;
+}
+
+nav ul li .var {
+    color: white;
+    font-size: 30px;
+    border-bottom: 3px solid white;
+}
+
+nav ul li::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #3AA687;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+nav ul li .var:focus,
+nav ul li .var:valid {
+    color: white;
+    font-size: 30px;
+}
+
+.sec1 {
+    height: 45vh;
+    background: #0F0F0F;
+    position: relative;
+}
+
+.bold {
+    width: 730px;
+    color: grey;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    line-height: 30px;
+    font-family: Din-Regular, Arial, sans-serif;
+    font-size: 25px;
+    word-spacing: 3px;
+    text-align: center;
+}
+
+.bold span {
+    color: white;
+}
+
+.info-name {
+    text-align: center;
+    padding: 60px 0;
+    position: relative;
+    font-size: 18px;
+}
+
+.divider {
+    margin: -.009px auto;
+    width: 30px;
+    height: 5px;
+    background-color: #3AA687;
+}
+
+.pics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7%;
+}
+
+.pics2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 7%;
+}
+
+.pics2 img {
+    width: 600px;
+    height: 400px;
+    margin: 5px;
+}
+
+.pics img {
+    width: 400px;
+    height: 300px;
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.pics figcaption .title,
+.pics2 figcaption .title {
+    display: inline-block;
+    padding: 0.35em 0.65em 0.25em 0;
+    background-color: #0F0F0F;
+    line-height: 1.35;
+    margin-top: -1.05em;
+}
+
+.pics figcaption .mid,
+.pics2 figcaption .mid {
+    display: block;
+    width: 350px;
+    font-family: Din-Light, Arial, sans-serif;
+    color: #969696;
+    margin-top: -0.25em;
+}
+
+.list-thumbnails figcaption {
+    text-align: left;
+    font-size: 20px;
+    margin-top: -1.05em;
+    padding-bottom: 0.625em;
+    background-color: inherit;
+    line-height: 1.35;
+}
+
+.foot {
+    text-align: center;
+    padding: 10px;
+    margin: 30px;
+}
+
+.foot a {
+    border: 3px solid #3AA687;
+    text-align: center;
+    background: transparent;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.down {
+    display: block;
+}
+
+.downfoot {
+    background-color: #080808;
+    padding: 0 3em 3em 3em;
+    color: #646464;
+    font-family: Din-Regular, Arial, sans-serif;
+    font-size: 0.7272rem;
+    line-height: 1.4;
+}
+
+.downfoot ul {
+    padding-top: 2em;
+    display: flex;
+    align-content: space-around;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.downfoot ul li {
+    flex: 1;
+    margin-left: 70px;
+}
+
+.downlist h5 {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.downlist p {
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.downlist a {
+    display: block;
+    color: #646464;
+    margin: 7px;
+    font-size: 17px;
+    position: relative;
+}
+
+.downlist a::after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #3AA687;
+}
+
+.downlist a:hover::after {
+    width: 50px;
+    transition: all .5s ease-in-out;
+}
+
+.downlist input {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #646464;
+    color: white;
+    width: 250px;
+}
+.goUP{
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    background: #062725;
+    border: none;
+    outline: none;
+}
+.goUP img{
+    color: #3AA687;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}

@@ -1,0 +1,361 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif, tahoma;
+    
+}
+html{
+    scroll-behavior:smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Din-Light, Arial, sans-serif;
+    line-height: 1.45;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-variant-ligatures: none;
+}
+
+nav {
+    background: #141414;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    word-spacing: 7em;
+    padding: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3AA687;
+    font-size: 20px;
+}
+
+nav ul li .var {
+    color: white;
+    font-size: 30px;
+    border-bottom: 3px solid white;
+}
+
+nav ul li::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #3AA687;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+nav ul li .var:focus,
+nav ul li .var:valid {
+    color: white;
+    font-size: 30px;
+}
+
+.sec1 {
+    height: 45vh;
+    background: #141414;
+    position: relative;
+}
+
+.info-name {
+    text-align: center;
+    padding: 60px 0;
+    position: relative;
+    font-size: 18px;
+}
+
+.divider {
+    margin: -.009px auto;
+    width: 30px;
+    height: 5px;
+    background-color: #3AA687;
+}
+
+.bold {
+    width: 730px;
+    color: grey;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    line-height: 30px;
+    font-family: Din-Regular, Arial, sans-serif;
+    font-size: 25px;
+    word-spacing: 3px;
+    text-align: center;
+}
+
+.down {
+    display: block;
+}
+
+.downfoot {
+    background-color: #080808;
+    padding: 0 3em 3em 3em;
+    color: #646464;
+    font-family: Din-Regular, Arial, sans-serif;
+    font-size: 0.7272rem;
+    line-height: 1.4;
+}
+
+.downfoot ul {
+    padding-top: 2em;
+    display: flex;
+    align-content: space-around;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.downfoot ul li {
+    flex: 1;
+    margin-left: 70px;
+}
+
+.downlist h5 {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.downlist p {
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.downlist a {
+    display: block;
+    color: #646464;
+    margin: 7px;
+    font-size: 17px;
+    position: relative;
+}
+
+.downlist a::after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #3AA687;
+}
+
+.downlist a:hover::after {
+    width: 50px;
+    transition: all .5s ease-in-out;
+}
+
+.downlist input {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #646464;
+    color: white;
+    width: 250px;
+}
+
+.first {
+    display: flex;
+    padding-bottom: 30px;
+    width: 80%;
+    margin-left: 20%;
+}
+
+.first h5 {
+    align-items: stretch;
+    color: #646464;
+    width: 30%;
+    text-align: left;
+    display: inline-block;
+    font-size: 20px;
+    padding-left: 5%;
+}
+
+.first p {
+    align-items: stretch;
+    padding-right: 5%;
+    width: 50%;
+    text-align: left;
+    display: inline-block;
+    color: #E6E6E6;
+}
+
+.first span {
+    color: #3AA687;
+}
+
+.hr {
+    width: 740px;
+    height: 1px;
+    background-color: #726969;
+    position: relative;
+    top: 50%;
+    left: 25%;
+}
+.pics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7%;
+    
+}
+.pics img{
+    width: 400px;
+    height: 500px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.pics figcaption .title{
+    display: block;
+    padding: 0.35em 0.65em 0.25em 0;
+    background-color: #0F0F0F;
+    line-height: 1.35;
+    margin-top: -1.05em;
+    color: white;
+    width: 150px;
+}
+.pics figcaption .mid{
+    display: block;
+    width: 350px;
+    font-family: Din-Light, Arial, sans-serif;
+    color: #969696;
+    margin-top: -0.25em;
+}
+.pics p{
+    width: 400px;
+    margin: 5px;
+    color: #bbb2b2;
+}
+.pics a{
+    text-decoration: none;
+    color: #3AA687;
+    display: block;
+    margin: 10px 0;
+}
+.list-thumbnails figcaption {
+    text-align: left;
+    font-size: 20px;
+    margin-top: -1.05em;
+    padding-bottom: 0.625em;
+    background-color: inherit;
+    line-height: 1.35;
+}
+.links{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 200px;
+}
+.link{
+    width: 20%;
+}
+.link a{
+    margin: 5px;
+   
+}
+.link ul li{
+    list-style: none;
+    margin: 5px;
+    position: relative;
+}
+.link ul li::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #3AA687;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+}
+
+.link ul li:hover::after {
+    width: 15%;
+    transition: all .5s ease-in-out;
+}
+.img{
+    width: 100%;
+    height: 100vh;
+    background: url(world-map.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.fg{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.cent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.studio-table {
+    font-size: 0.8rem;
+    text-align: left;
+    border-collapse: collapse;
+    width: 70%;
+    margin-top: -0.85rem;
+    
+}
+table, th, td {
+    padding: 15px 50px;
+    font-size: 20px;
+}
+.studio-table-header {
+    color: #45B39F;
+    font-weight: bold;
+}
+table tr {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+}
+.cent span{
+    color: #646464;
+}
+.goUP{
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    background: #062725;
+    border: none;
+    outline: none;
+}
+.goUP img{
+    color: #3AA687;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
